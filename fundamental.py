@@ -7,11 +7,11 @@ from sklearn.linear_model import LinearRegression
 def get_quarterly_report(ticker):
     stock = yf.Ticker(ticker)
 
-    # Get historical data for the last 3-4 years
-    hist = stock.history(period="4y")
+    # Get historical data for the last 5 years (changed '4y' to '5y')
+    hist = stock.history(period="5y")
 
-    # Resample to quarterly intervals and calculate high and low prices
-    quarterly_data = hist.resample('Q').agg({'High': 'max', 'Low': 'min'})
+    # Resample to quarterly intervals and calculate high and low prices (changed 'Q' to 'QE')
+    quarterly_data = hist.resample('QE').agg({'High': 'max', 'Low': 'min'})
 
     # Use linear regression to predict future prices for the next quarter
     X = pd.DataFrame({'Quarter': range(len(quarterly_data))}).values.reshape(-1, 1)
