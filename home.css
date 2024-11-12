@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #070F57;
+}
+#logo{
+    float: left;
+    position: relative;
+    width: 10px;
+    top: 0px;
+    margin: 0px 8% 0px 0px;
+}
+.navbar {
+    height: 60px; /* Decrease the height of the navbar */
+    background: black; /* Set background color to black */
+}
+
+.nav-links {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px; /* Add margin between list items */
+}
+
+.nav-links li a {
+    display: block;
+    padding: 0 20px; /* Adjust padding */
+    color: white;
+    text-decoration: none;
+    line-height: 40px; /* Adjust line height */
+    font-size: 16px; /* Decrease font size */
+}
+
+/* Grey color on hover */
+.nav-links li:hover {
+    background-color: #ccc;
+}
+
+/* Dropdown menu */
+.nav-links li ul {
+    position: absolute;
+    top: 100%; /* Adjust the position of the dropdown */
+    left: 0;
+    background: #2c3e50; /* Set background color of dropdown menu */
+    line-height: 20px;
+    display: none;
+    z-index: 1; /* Ensure the dropdown appears above other content */
+}
+
+.nav-links li ul li {
+    display: block;
+}
+
+.nav-links li ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px; /* Adjust padding */
+    display: block;
+    font-size: 14px; /* Decrease font size */
+}
+
+.nav-links li ul li a:hover {
+    background-color: #34495e; /* Change background color on hover */
+}
+
+/* Show the dropdown menu when hovering over the parent item or its dropdown */
+.nav-links li:hover > ul,
+.nav-links li ul:hover {
+    display: block;
+}
+
+/* Make the entire list item clickable */
+.nav-links li a {
+    display: block;
+    padding: 10px 20px; /* Adjust padding */
+}
+
+
+
+
+#headw{
+    margin: 0 px;
+    display: table-cell;
+    font-size: 40px;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    vertical-align: middle;
+}
+#headw p{
+    font-size: 30px;
+}
+#headx{
+    margin-left: 30px;
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: underline;
+}
+#heady{
+    padding-top: 10px;
+    font-size: 28px;
+    color: #ffffff;
+}
+#headz{
+    padding-top: 10px;
+    font-size: 28px;
+    color: #ffffff;
+}
+#headz a{
+    color: #ffffff
+}
+.tabs1{
+    width: 30%;
+    height: 150px;
+    font-size: 20px;
+    float: left;
+    padding: 20px;
+}
+.tabs1 a{
+    color: #ffffff;
+}
+.tabs2{
+    margin: 100px;
+    color: #ffffff;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+label{
+    font-size: 20px;
+}
+input[type=text],select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #070F57;
+    border-radius: 4px;
+}
+button{
+    border: 1px solid #070F57;
+    background-color: #070F57;
+    color: #ffffff;
+    width: 130px;
+    height: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#foot{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+    width: 100%;
+    bottom: 0px;
+    height: 120px;
+    font-weight: bold;
+    background-color: #000000;
+    color: #ffffff;
+}
+#foot a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 17px;
+}
